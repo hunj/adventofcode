@@ -12,4 +12,5 @@ My approach to [Advent of Code 2023](https://adventofcode.com/2023).
   ```
   $ cp .env.sample .env
   ```
-2. 
+3. Write the solution in `aoc/N.py` where N is the corresponding day's number.
+4. Run & confirm the answer on the website!
