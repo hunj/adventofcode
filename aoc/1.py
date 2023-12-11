@@ -1,6 +1,18 @@
-from ..utils.aoc import get_data_for
+import re
+from utils import aoc
 
-data = get_data_for(day=1)
+data = aoc.get_data_for(day=1)
 
-# test
-print(data)
+# part 1
+
+SUM = 0
+
+for line in data:
+    re_match = re.findall(r'\d', line)
+    if not re_match:
+        continue
+    to_add = int(re_match[0]) * 10 + int(re_match[-1])
+
+    SUM += to_add
+
+print(SUM)
