@@ -29,3 +29,23 @@ while current != "ZZZ":
         steps += 1
 
 print(steps)
+
+# part 2
+
+ends_with_a = list(filter(lambda x: x.endswith("A"), mapping.keys()))
+counts = dict.fromkeys(ends_with_a, 0)
+
+for key in counts:
+    count = 0
+    current = key
+    for d in directions:
+        if current.endswith('Z'):
+            break
+        elif d == "L":
+            current = mapping[current][0]
+        elif d == "R":
+            current = mapping[current][1]
+        count += 1
+
+
+print(ends_with_a)
