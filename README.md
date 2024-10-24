@@ -1,6 +1,6 @@
-# Advent of Code 2023
+# Advent of Code
 
-My approach to [Advent of Code 2023](https://adventofcode.com/2023).
+My approach to [Advent of Code](https://adventofcode.com/).
 
 ## Instructions
 
@@ -12,8 +12,8 @@ My approach to [Advent of Code 2023](https://adventofcode.com/2023).
   ```
   $ cp .env.sample .env
   ```
-3. Write the solution in `aoc/N.py` where N is the corresponding day's number.
+3. Write the solution in `202X/N.py` where N is the corresponding day's number.
 4. Run & confirm the answer on the website:
   ```
-  $ python -m aoc.N
+  $ python -m 202X.N
   ```
